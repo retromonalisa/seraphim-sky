@@ -77,15 +77,15 @@ PR/F1 curves, confusion matrices and the trained weights (`best.pt`, `best.onnx`
 
 ## Field Tests
 
-Real-world recordings from the Raspberry Pi 5 + IMX500 setup, from bench test to open field.
+Real-world recordings from the Raspberry Pi 5 + IMX500 setup, from bench test to open field. The [test recordings guide](test%20recordings) has previews and notes on what happens in each run.
 
 | Set | Scene | GIF | Video |
 |---|---|---|---|
-| **Final attempts** | Open field — drone against a cloudy sky | [1](test%20recordings/out-door/final-attempts/final_iteration_1.md) · [2](test%20recordings/out-door/final-attempts/final_iteration_2.md) · [3](test%20recordings/out-door/final-attempts/final_iteration_3.md) · [4](test%20recordings/out-door/final-attempts/final_iteration_4.md) · [5](test%20recordings/out-door/final-attempts/final_iteration_5.md) | [1](https://youtu.be/t2ZcmzPuLWs) · [2](https://youtu.be/Hb2t5CzQXDM) · [3](https://youtu.be/-Y4pE9_w-u8) · [4](https://youtu.be/1RETE5MvYhY) · [5](https://youtu.be/0m6LsMKaPNc) |
-| **Trials** | Campus — between trees and buildings | [1](test%20recordings/out-door/trials-1/take1.md) · [2](test%20recordings/out-door/trials-1/take2.md) · [3](test%20recordings/out-door/trials-1/take3.md) · [4](test%20recordings/out-door/trials-1/take4.md) | [1](https://youtu.be/478HzCcQR3A) · [2](https://youtu.be/O8dWyrXIT6c) · [3](https://youtu.be/XoHap88_YrY) · [4](https://youtu.be/ha9-GHH9w2I) |
-| **Indoor** | Bench test — drone image on a laptop screen | [GIF](test%20recordings/in-door/indoor%20recording%20image.md) | [Video](https://youtu.be/j-8RWpgCHyM) |
+| **Final attempts** | Open field — drone against a cloudy sky | [1](test%20recordings/out-door/final-attempts/final_iteration_1.gif) · [2](test%20recordings/out-door/final-attempts/final_iteration_2.gif) · [3](test%20recordings/out-door/final-attempts/final_iteration_3.gif) · [4](test%20recordings/out-door/final-attempts/final_iteration_4.gif) · [5](test%20recordings/out-door/final-attempts/final_iteration_5.gif) | [1](https://youtu.be/t2ZcmzPuLWs) · [2](https://youtu.be/Hb2t5CzQXDM) · [3](https://youtu.be/-Y4pE9_w-u8) · [4](https://youtu.be/1RETE5MvYhY) · [5](https://youtu.be/0m6LsMKaPNc) |
+| **Trials** | Campus — between trees and buildings | [1](test%20recordings/out-door/trials-1/take1.gif) · [2](test%20recordings/out-door/trials-1/take2.gif) · [3](test%20recordings/out-door/trials-1/take3.gif) · [4](test%20recordings/out-door/trials-1/take4.gif) | [1](https://youtu.be/478HzCcQR3A) · [2](https://youtu.be/O8dWyrXIT6c) · [3](https://youtu.be/XoHap88_YrY) · [4](https://youtu.be/ha9-GHH9w2I) |
+| **Indoor** | Bench test — drone image on a laptop screen | [GIF](test%20recordings/in-door/indoor_testing.gif) | [Video](https://youtu.be/j-8RWpgCHyM) |
 
-> The constant 0.73 score on every box is the INT8 confidence plateau explained in [Technical Notes](#technical-notes). Each GIF is 28–87 MB, so the YouTube videos load faster.
+> The score stays at 0.73 on almost every box: the INT8 confidence plateau explained in [Technical Notes](#technical-notes). Each GIF is 28–86 MB, so the YouTube videos load faster.
 
 ---
 
@@ -224,6 +224,8 @@ seraphim-sky/
 │       ├── requirements.txt          — pip dependencies for the venv (secondary script)
 │       └── readme.txt                — plain-text run notes
 ├── test recordings/
+│   ├── README.md                     — what each test shows, with previews and video links
+│   ├── previews/                     — still frames used in that README
 │   ├── in-door/                      — indoor bench test
 │   └── out-door/
 │       ├── trials-1/                 — take1 – take4
