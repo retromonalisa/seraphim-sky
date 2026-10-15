@@ -85,7 +85,7 @@ Real-world recordings from the Raspberry Pi 5 + IMX500 setup, from bench test to
 | **Trials** | Campus — between trees and buildings | [1](test%20recordings/out-door/trials-1/take1.gif) · [2](test%20recordings/out-door/trials-1/take2.gif) · [3](test%20recordings/out-door/trials-1/take3.gif) · [4](test%20recordings/out-door/trials-1/take4.gif) | [1](https://youtu.be/478HzCcQR3A) · [2](https://youtu.be/O8dWyrXIT6c) · [3](https://youtu.be/XoHap88_YrY) · [4](https://youtu.be/ha9-GHH9w2I) |
 | **Indoor** | Bench test — drone image on a laptop screen | [GIF](test%20recordings/in-door/indoor_testing.gif) | [Video](https://youtu.be/j-8RWpgCHyM) |
 
-> The score stays at 0.73 on almost every box: the INT8 confidence plateau explained in [Technical Notes](#technical-notes). Each GIF is 28–86 MB, so the YouTube videos load faster.
+> The score reads 0.73 on most boxes: the INT8 confidence plateau explained in [Technical Notes](#technical-notes). Each GIF is 28–86 MB, so the YouTube videos load faster.
 
 ---
 
@@ -225,7 +225,7 @@ seraphim-sky/
 │       └── readme.txt                — plain-text run notes
 ├── test recordings/
 │   ├── README.md                     — what each test shows, with previews and video links
-│   ├── previews/                     — still frames used in that README
+│   ├── assets/                       — banner art, preview loops and still frames for that README
 │   ├── in-door/                      — indoor bench test
 │   └── out-door/
 │       ├── trials-1/                 — take1 – take4
